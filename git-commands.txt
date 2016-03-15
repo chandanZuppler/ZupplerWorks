@@ -1,0 +1,43 @@
+git config --global user.name "Chandan kumar"
+git config --global user.email "chandan@yahop.com"
+git config --list
+
+
+
+ls -la (doc listing)
+
+cat .gitconfig 
+
+ls -la (show hidden files)
+
+
+git status (check status)
+
+ls -la .git
+
+
+git add . (this add all files in repository directory and make list in git directory list.)
+git log
+git commit -m "comment here"
+
+git commit -a (everythign commit add)
+git commit -am
+
+------------------
+undo file
+git reset HEAD filename.html
+
+
+git amend (change comment name)
+git rm file_to_delete.txt (use to delete files)
+
+git commit --amend -m "Rearrage the item to outldoor trip"
+
+git reset (resetting the css)
+--soft
+--mixed
+--hard
+
+
+
+==== New Commands =====
