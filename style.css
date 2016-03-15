@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background-color:#321c24; font-family: 'Open Sans', sans-serif;}
+
+
+
+
+
+/*Header */
+body header{background-color:#4a90e2;padding:32px 0 42px 0; display:flex; flex-flow: row wrap;}
+.content{margin:0 auto;}
+header p{flex:0 1 100%;}
+header p label{ display:block; padding-bottom:14px; color:#fff;flex:0 1 100%;}
+header p label span[title="count"]{ color:#321c24; font-weight:bold;}
+header input[type="text"]{ text-indent:15px; background-color:#321c24; color:#fff; border:0; font-size:1.2em; height:52px; flex:0 1 1000px;}
+header input[type="button"]{background-color:#fff; padding:0px 10px;  color:#5798e4; border:0; font-size:1.2em; height:52px; cursor:pointer; flex:0 3 100%;}
+
+
+/*Nav */
+nav{ margin-top:28px;display:inline-block;}
+nav label{ padding-bottom:11px; color:#fff; float:left;}
+nav ul{ clear:both;}
+nav ul li{ display:inline-block;}
+nav ul li a{ text-decoration:none; display:inline-block; order:1; flex:0 1 127px; height:auto; padding:12px 0; margin:1px; background-color:#fff; color:#3a252c; text-align:center; }
+nav ul li a:hover{ background-color:#321c24; color:#fff;}
+nav ul li a.selected{ background-color:#321c24; color:#fff;}
+
+nav.left{ width:270px; }
+nav.right{ width:790px; float:right;}
+
+/*Section */
+section{color:#fff; text-align:center; display:table; width:100%; }
+section .content{height:738px; display:table-cell; vertical-align:middle;}
+section p{width:35%; line-height:normal;}
+
+
+
+
+
+
+/*Responsive Css*/
+@media screen and (max-width: 480px) {	
+	header {background-color:#7ed321; width:100%; float:left; height:auto;}
+	header .content{ width:90%; text-align:center;}
+	section .content{ height:auto;}
+	header input[type="button"] {border-radius: 30px; clear: both; margin-top: 9px; width: 100%;}	
+	header input[type="text"] {color: #fff;    margin: 0;    padding: 0; width: 100%;}
+	header p label{ width:100%; text-align:center; margin-bottom:13px;}
+	nav label{ width:100%; text-align:center;}
+	nav.left, nav.right{ width:100%;}	
+	section{ height:auto; padding:40px 0;}
+	section .content p{ text-align:left; font-size:0.75em; line-height:20px; color:#cac5c7; width:80%;}
+	section .content p span{ display:none;}
+}
+
